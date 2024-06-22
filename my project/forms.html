@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: aqua; font-size: larger;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nikhil">
+        <link rel="stylesheet" href="forms.css">
+
+        <title>
+            forms
+        </title>
+    </head>
+    <body>
+        <main>
+            <article id="forms">
+                <h2>contact me</h2>
+                <p>i would like you to contact me </p>
+
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal info</legend>
+                        <p>
+                            <label for="firstName">First name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Your name" autocomplete="on" required autofocus> <!-- name used to show at the server the input value. Place holder is example data autofocus used to make direct cursor on the form only 1 can be used -->
+                        </p>
+                        <p> 
+                            <label for="lastName">Last name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Your surname" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="email">Your email id</label>
+                            <input type="email" name="email" id="email" placeholder="id@gmail.com" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="password">password:</label>
+                        <input type="password" name="password" id="password" placeholder="" autocomplete="off" required>
+                        </p>
+                        
+                        <p>
+                            <label for="phone">Phone number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+91" autocomplete="on" pattern="[0-9]{10}">
+                        </p>
+
+                        <p>
+                            <label for="Age">Your Age</label>
+                        <input type="number" name="Age" id="Age" placeholder="Age" autocomplete="on" required min="16" value="16" max="80">
+                        </p>                    
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Personal Choices</legend>
+                    <p>
+                        <label for="coffee" >Favorite Coffee
+                            <select name="coffees" id="coffees" >
+                                <!--optgroup help to make grouping in choice selection--><optgroup label="Coffee"><!--this label acts as a heading in choice selection-->
+                                    <option value="regular" selected>Normal coffee</option>
+                                    <option value="Iced">Iced lattee</option>
+                                </optgroup>
+                                <optgroup label="Expresso Drinks">
+                                    <option value="expresso">Expresso</option>
+                                    <option value="decfe">Decaf</option>
+                                    <option value="americano">americano</option>
+                                </optgroup>
+                                <option value="other">Others</option>
+                            </select>
+                        </label>
+                    </p> 
+                    </fieldset>
+                <!-- <p>
+                    <label for="Coffee-choice">Your favorite coffee</label>
+                    <input type="text" required name="coffee" id="coffee-list" list="coffee-list" >
+                    <datalist value="coffee-list">
+                        <option value="regular">Regular</option>
+                        <option value="Expresso">Expresso</option>
+                        <option value="americano">Americano</option>
+                        <option value="Iced latte">Iced latte</option>
+                    </datalist>
+                </p> -->
+                <br>
+                <fieldset>
+                    <legend>Whats your favorite food</legend>
+                    <input type="radio" id="tacos" name="food" value="tacos">
+                    <label for="tacos">Tacos</label>
+
+                    <input type="radio" id="pizza" name="food" value="pizza">
+                    <label for="pizza">Pizza</label>
+                    <br>
+                    <input type="radio" id="burger" name="food" value="burger">
+                    <label for="burger">Burger</label>
+
+                    <input type="radio" id="Vegies" name="food" value="Vegies">
+                    <label for="Vegies">Vegies</label>
+                    <br>
+                    <input type="radio" id="others" name="food" value="others">
+                    <label for="others">others</label>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Do you have a pet?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="other" value="other">
+                        <label for="other">other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit Form</button>
+                <button type="submit" formmethod="post" formaction="https://httpbin.org/post">Post</button>
+                <button type="reset">Reset Form</button>
+                </form>
+            </article>
+        </main>
+    </body>
+</html>

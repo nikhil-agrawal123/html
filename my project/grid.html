@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css grid</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="nikhil">
+    </head>
+    <body>
+        <div style="display: grid;
+        grid-template-columns: 100px 100px;
+        ">
+            <div style="background-color: lightblue; padding: 10px;">div 1</div>
+            <div style="padding: 10px; background-color:  lightcoral;">div 2</div>
+        </div>
+        <div style="display: grid;
+        margin-top: 30px;
+        grid-template-columns: 100px 1fr;">
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightcoral;">div 2</div>
+    </div>
+        <div style="display: grid;
+            margin-top: 30px;
+            height: 200px;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr; ">
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightcoral;">div 2</div>
+            <div style="background-color: lightblue;"> div3</div>
+            <div style="background-color: lightblue;">
+                hello
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- fr used to get all the remaing space on the div element the number on it denotes the ratio of space its going to get-->
+
+<!--grids also auto align the vertical alighnmet of the coresponding coloum according to the amount of data in it-->

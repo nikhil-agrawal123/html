@@ -1,0 +1,48 @@
+body{
+    font-size: 25px;
+    color: black;
+}
+.download:hover{
+    color: orange;
+    transition: 0.3s;
+}
+.download:active{
+    color: black;
+}
+button{
+    height: 35px;
+    cursor: pointer;
+    font-size: medium;
+    border: none;
+}
+button:active{
+    opacity: 0.8;
+    transition: 20ms;
+}
+button:hover{
+    opacity: 0.6;
+    box-shadow: 2px 2px 2px black;
+}
+.LINKEDIN{
+    height: 40px;
+    font-size: 25px;
+    width: 50px;
+    color: white;
+}
+.INSTAGRAM{
+    color: black;
+    font-family:monospace;
+    font-size: 20px;
+}
+.FACEBOOK{
+    color: white;
+}
+.FACEBOOK1{
+    background-color: navy;
+}
+.INSTAGRAM1{
+    background-color: rgb(241, 54, 241);
+}
+.LINKEDIN1{
+    background-color: blue;
+}

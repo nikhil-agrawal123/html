@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nikhil">
+        <link rel="stylesheet" href="main.css">
+        
+        <title>
+            table
+        </title>
+    </head>
+    <table>
+        <caption>
+            <b>My schedule</b>
+        </caption>
+        <thead> <!-- table head body and foot same funtion as normal head body and foot-->
+            <tr> <!--th for table header have some pre set custamizaton-->
+                <th>&nbsp;</th>
+                <th scope="col" >Time</th>
+                <th scope="col">Activity</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr><!--table row-->
+                <th scope="row">morning</th>
+                <td><!--table data-->
+                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                </td>
+                <td> Write code</td>
+            </tr>
+            <tr>
+                <th scope="row">break</th>
+                <td>
+                    <time datetime="11:00">11am</time>-<time datetime="14:00">2pm</time>
+                </td>
+                <td>Eat lunch</td>
+            </tr>
+            <tr>
+                <th scope="row">afternoon</th>
+                <td>
+                    <time datetime="14:00">2pm</time>-<time datetime="16:00">5pm</time>
+                </td>
+                <td>Study for other languages</td>
+            </tr>
+            <tr>
+                <th scope="row">evening</th>
+                <td rowspan="2"> <!-- to merge rows--> 
+                    All other time
+                </td>
+
+                <td colspan="2"> <!-- colsapan to merge 2 or more cells together-->
+                    free time
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">night</th>
+                <td>
+                    sleep
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    and thats what i do everyday 5 days a week..
+                </td>
+            </tr>
+        </tfoot>
+    </table> 
+    <style>
+        table, tr, th ,td, caption{ 
+            border: 5px solid black;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse:collapse;
+            padding: 0.5rem;
+            background-color:coral;
+        }
+    </style>
+</html>
