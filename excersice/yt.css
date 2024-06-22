@@ -1,0 +1,47 @@
+.Search{
+    font-size: 20px; 
+    display: block;
+}
+
+.overall{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+
+}
+.channel-img{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.thumbnail{
+    width: 300px
+}
+
+.channel-dis{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    font-family: Roboto, arial;
+    margin-top: 6px;
+}
+
+.channel{
+    border-radius: 50px;
+    width: 45px;
+}
+
+.dis{
+    vertical-align: top;
+}
+
+.head{
+    font-size: small;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.views{
+    font-size: small;
+    width: 100%;
+}
