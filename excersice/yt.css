@@ -4,19 +4,22 @@
 
 .overall{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
     width:300px;
 
 }
 .channel-img{
     display: grid;
     grid-template-columns: 1fr;
+    width: 300px;
+
 }
 
 .thumbnail{
-    width: 300px
+    width: 100%;
 }
 
 .channel-dis{
@@ -39,8 +42,11 @@
 .head{
     font-size: small;
     margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
 }
 
 .views{
     font-size: small;
+    margin-top: 6px;
 }
