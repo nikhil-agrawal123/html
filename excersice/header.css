@@ -1,0 +1,83 @@
+.Search{
+    font-size: 20px; 
+    margin-right: 0px;
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-end-start-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: inset 1px 0.5px 1px black;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+}
+
+.middle{
+    display: flex;
+    flex :1;
+    height: 35px;
+    max-width: 700px;
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.right{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.extras{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.extra{
+    width: 100px;
+}
+
+.search , .voice{
+    width: 25px;
+    height: 35px;
+}
+.voice-button{
+    border-radius: 50px;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(248, 248, 248);
+}
+
+.search{
+    margin-left: 0px;
+    padding-left: 5px ;
+}
+
+.Search::placeholder{
+    font-family: Roboto, airal;
+    padding-left: 12px ;
+}
+
+.search-button{
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+    border-width: 1px;
+    background-color: rgb(248, 248, 248);
+}
+
+.person{
+    border-radius: 40px;
+}
