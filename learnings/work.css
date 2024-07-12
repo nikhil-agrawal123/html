@@ -46,3 +46,9 @@ button:hover{
 .LINKEDIN1{
     background-color: blue;
 }
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
