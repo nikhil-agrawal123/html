@@ -7,26 +7,31 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <div class="over">
-            <div>All inbox</div>
-            <div class="dis">
-                <div><img src="C:\Users\nikhi\coding\html\excersice\channel\channel-5.jpeg" alt="ih"></div>
-                <div class="info"><b>Chewy promotions <br>Biggest sale of the year!</b> <br> Hey we are writing yo you to tell you....</div>
+        <div class="info">
+            <img src="C:\Users\nikhi\coding\html\excersice\channel\channel-1.jpeg" alt="1">
+            <div class="hover-info">
+                <div class="imgs"><img src="C:\Users\nikhi\coding\html\excersice\channel\channel-1.jpeg" alt="1"></div>
+                <div class="sub-count">Marqus brownlee <br> 15M subsribers</div>
             </div>
         </div>
+        <style>
+            .info .hover-info{
+                display: flex;
+                flex-direction: row;
+                opacity: 0;
+                width: fit-content;
+                background-color: white;
+                color: black;
+            }
 
-    <style>
-        .dis{
-            display: flex;
-            flex-direction: row;
-        }
-        .over{
-            width: fit-content;
-            box-shadow: 0px 1px 2px black;
-        }
-        .info{
-            margin-left: 5px;
-        }
-    </style>
+            .info .hover-info:hover{
+                pointer-events: none;
+            }
+
+            .info:hover .hover-info{
+                opacity: 1;
+                cursor: pointer;
+            }
+        </style>
     </body>
 </html>

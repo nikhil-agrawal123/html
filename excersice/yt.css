@@ -4,18 +4,36 @@ body{
 
 .overall{
     display: grid;
-    grid-template-columns: 300px 300px 300px ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr  ;
     row-gap: 20px;
     column-gap: 20px;
     background-color: rgb(250, 249, 249);
     padding-left: 100px;
 }
 
+@media(max-width: 850px){
+    .overall{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 560px){
+    .overall{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(min-width: 1300px){
+    .overall{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .channel-img{
     display: grid;
     grid-template-columns: 1fr;
-    width: 300px;
+    width: 100%px;
     position: relative;
 }
 
@@ -64,4 +82,36 @@ body{
 .views{
     font-size: small;
     margin-top: 6px;
+}
+
+.info .hover-info{
+    opacity: 0;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    background-color: white;
+    position: absolute;
+    width: fit-content;
+    margin-top: 5px;
+
+}
+
+.info .cha-imgs:hover,
+.info .sub-count:hover{
+    pointer-events: none;
+}
+
+.info:hover .hover-info{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sub-count{
+    padding-left: 30px;
+}
+
+.cha-imgs{
+    width: 50px;
+    border-radius: 50px;
 }
